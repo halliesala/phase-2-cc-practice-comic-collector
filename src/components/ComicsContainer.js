@@ -1,10 +1,14 @@
 import Comic from "./Comic"
 
-function ComicsContainer() {
+function ComicsContainer({comics, removeComic}) {
 
   return (
     <>
-      <Comic />
+      {comics.map(comic => {
+        return (
+          <Comic key={comic.id} comic={comic} removeComic={removeComic}/>
+        )
+      })}
     </>
   )
 

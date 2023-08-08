@@ -1,7 +1,49 @@
 import ComicsContainer from "./ComicsContainer"
 import ComicForm from "./ComicForm"
+import React, { useEffect, useState } from 'react';
 
 function App() {
+  
+  const BLANK_FORM_DATA = {
+    title: "",
+    issue: "",
+    image_url: "",
+    description: "",
+  }
+
+  const [comics, setComics] = useState([]);
+
+  const [formData, setFormData] = useState(BLANK_FORM_DATA)
+
+  
+  useEffect(() => {
+      fetch('http://localhost:8004/comics')
+        .then(data => data.json())
+        .then(comics => {
+          console.log(comics);
+          setComics(comics);
+        })
+    }
+    ,
+    []
+  );
+
+  function addComic(newComic) {
+    setComics([...comics, newComic]);
+    setFormData(BLANK_FORM_DATA)
+  }
+
+  function removeComic(id) {
+    fetch(`http://localhost:8004/comics/${id}`, {'method': 'DELETE'})
+      .then( () => {
+        console.log(`Removing comic ${id}`)
+        setComics(comics.filter(comic => {
+          return comic.id !== id
+        }))
+      }
+      )
+  }
+
   return (
     <div className="App">
 
@@ -10,11 +52,11 @@ function App() {
       <div className="grid with-sidebar">
 
         <div className="flex-container">
-          <ComicsContainer />
+          <ComicsContainer comics={comics} removeComic={removeComic}/>
         </div>
 
         <div className="sidebar">
-          <ComicForm />
+          <ComicForm formData={formData} setFormData={setFormData} addComic={addComic} />
         </div>
 
       </div>
