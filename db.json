@@ -5,21 +5,23 @@
       "title": "The Incredible Hulk",
       "issue": "1",
       "image_url": "https://i.annihil.us/u/prod/marvel/i/mg/9/a0/59933ea5b5c2e/clean.jpg",
-      "description": "I think that should have fixed the toggling"
+      "description": "I think that should have fixed the toggling",
+      "favorite": false
     },
     {
       "id": 2,
       "title": "The Amazing Spiderman",
       "issue": "1",
       "image_url": "https://i.annihil.us/u/prod/marvel/i/mg/d/40/5196582d03800/clean.jpg",
-      "description": "And it did!"
+      "description": "And it did!",
+      "favorite": true
     },
     {
       "id": 3,
       "title": "The Amazing Spiderman",
       "issue": "300",
       "image_url": "https://images-na.ssl-images-amazon.com/images/I/A1Hqli+hGCL.jpg",
-      "description": "Ok -- will it be details or image?"
+      "description": ""
     },
     {
       "id": 4,

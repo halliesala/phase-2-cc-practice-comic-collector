@@ -43,9 +43,12 @@ code {
   box-shadow: 3px 5px #222A;
   width: 300px;
   background-color: white;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
 }
 
 .comic-item img {
+  height: 30rem;
   width: 100%;
 }
 
@@ -74,4 +77,17 @@ button, input[type=submit] {
 
 input {
   border: solid black 2px;
+}
+
+.comic-item-container {
+
+}
+
+.favorited {
+  background-color: red;
+  color: white;
+}
+
+.not-favorited {
+  background-color: white;
 }
