@@ -44,6 +44,12 @@ function App() {
       )
   }
 
+  function updateComic(updatedComic) {
+    // find the comic with same id
+    const id = comics.findIndex(comic => comic.id === updatedComic.id);
+    setComics([...comics.slice(0, id), updatedComic, ...comics.slice(id + 1)])
+  }
+
   return (
     <div className="App">
 
@@ -52,7 +58,7 @@ function App() {
       <div className="grid with-sidebar">
 
         <div className="flex-container">
-          <ComicsContainer comics={comics} removeComic={removeComic}/>
+          <ComicsContainer comics={comics} removeComic={removeComic} updateComic={updateComic}/>
         </div>
 
         <div className="sidebar">

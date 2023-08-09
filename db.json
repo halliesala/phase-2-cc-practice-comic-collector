@@ -4,25 +4,29 @@
       "id": 1,
       "title": "The Incredible Hulk",
       "issue": "1",
-      "image_url": "https://i.annihil.us/u/prod/marvel/i/mg/9/a0/59933ea5b5c2e/clean.jpg"
+      "image_url": "https://i.annihil.us/u/prod/marvel/i/mg/9/a0/59933ea5b5c2e/clean.jpg",
+      "description": "I think that should have fixed the toggling"
     },
     {
       "id": 2,
       "title": "The Amazing Spiderman",
       "issue": "1",
-      "image_url": "https://i.annihil.us/u/prod/marvel/i/mg/d/40/5196582d03800/clean.jpg"
+      "image_url": "https://i.annihil.us/u/prod/marvel/i/mg/d/40/5196582d03800/clean.jpg",
+      "description": "And it did!"
     },
     {
       "id": 3,
       "title": "The Amazing Spiderman",
       "issue": "300",
-      "image_url": "https://images-na.ssl-images-amazon.com/images/I/A1Hqli+hGCL.jpg"
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/A1Hqli+hGCL.jpg",
+      "description": "Ok -- will it be details or image?"
     },
     {
       "id": 4,
       "title": "Action Comics",
       "issue": "1",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Action_Comics_1.jpg"
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Action_Comics_1.jpg",
+      "description": "Details or image?"
     },
     {
       "id": 5,
@@ -34,7 +38,7 @@
       "title": "Batman",
       "issue": "66",
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVMeOihMYYopAOop5xY2NyrS-RywCIRGiqFQ&usqp=CAU",
-      "description": "the boner issue",
+      "description": "Details or image?",
       "id": 6
     }
   ]
